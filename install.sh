@@ -22,15 +22,10 @@ if ! command -v yay >/dev/null; then
 fi
 
 # Installa pacchetti AUR
-yay --answerdiff None --answerclean None -S --noconfirm wob batsignal rofi-lbonn-wayland-git
+yay --answerdiff None --answerclean None -S --noconfirm wob batsignal rofi-lbonn-wayland-git tofi
 
 # Installa driver per accelerazione hardware GPU
 sudo pacman -S --noconfirm --needed intel-media-driver libva-mesa-driver mesa-vdpau libva-utils
-
-# Installa altri software
-sudo pacman -S --noconfirm --needed \
-  telegram-desktop hugo gucharmap nodejs npm gnome-disk-utility code gprename \
-  evince zramswap lazygit powertop htop
 
 # Copia i file di configurazione se esistono
 [ -d home ] && cp -r home/. ~/
