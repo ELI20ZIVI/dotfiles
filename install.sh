@@ -8,7 +8,7 @@ sudo pacman -S --noconfirm --needed \
   brightnessctl qt5ct exa foot micro nemo hyprland ttf-jetbrains-mono waybar \
   otf-font-awesome terminus-font pamixer swaybg swaylock swayidle polkit-kde-agent \
   python-requests nemo-fileroller nemo-image-converter acpid mako gammastep mpv \
-  blueman profile-sync-daemon imv swappy grim slurp xdg-desktop-portal-hyprland lightdm
+  blueman profile-sync-daemon imv swappy grim slurp xdg-desktop-portal-hyprland lightdm pacman-contrib
 
 # Verifica se yay è installato, altrimenti installalo
 if ! command -v yay >/dev/null; then
